@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <title>A & G</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js" defer></script>
+</head>
+<style></style>
+
+<body>
+    <header class="container">
+        <div class="header-container">
+            <div class="logo"><img src="icon/logo.png.png" alt="Logo do Casamento"></div>
+
+            <p class="noivos">Aline e Gabriel</p>
+
+        </div>
+    </header>
+
+    <article class="container">
+        <div class="texto-container">
+
+            <h1>Bem-vindos ao nosso casamento</h1>
+
+            <p>
+                Estamos muito felizes em compartilhar esse momento único nas nossas vidas com vocês. Aqui vamos dividir
+                com vocês informações importantes para o Grande
+                Dia.
+            </p>
+
+            <p>A contagem regressiva começa, o frio na barriga e toda a ansiedade do dia mais esperado de nossas vidas,
+                nos enche de alegria em tê-los ao nosso lado.
+            </p>
+
+        </div>
+
+    </article>
+
+    <section class="container">
+
+        <h1>FALTAM:</h1>
+
+        <div class="countdown-container">
+            <div class="countdown-el dias-c">
+                <p class="text" id="dias">0</p>
+                <span>dias</span>
+            </div>
+
+            <div class="countdown-el horas-c">
+                <p class="text" id="horas">0</p>
+                <span>horas</span>
+            </div>
+
+            <div class="countdown-el minutos-c">
+                <p class="text" id="minutos">0</p>
+                <span>minutos</span>
+            </div>
+
+            <div class="countdown-el segundos-c">
+                <p class="text" id="segundos">0</p>
+                <span>segundos</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <main class="container">
+
+        <div class="nav-container">
+
+            <!--presença-->
+            <div class="imagem"><img onclick="abrirPopup()" src="icon/confirmarpessoa-icon.ico"
+                    alt="Confirmação de presença">
+                <p onclick="abrirPopup()">Presença</p>
+            </div>
+
+            <div class="overlay" id="overlay" onclick="fecharPopup()"></div>
+            <div class="popup" id="popup">
+                <p>Confirmação de presença</p>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome!" required>
+                <input type="email" name="email" id="email" placeholder="Digite seu email!" required>
+                <input type="tel" name="telefone" id="telefone" placeholder="(55+) xx x xxxx-xxxx" required>
+                <button type="submit">Confirmar</button>
+                <button onclick="fecharPopup()">Fechar</button>
+            </div>
+
+
+            <!--cerimonia-->
+            <div class="imagem"><img onclick="abrirCerimonia()" src="icon/alianca-icon.ico" alt="Local da Cerimônia">
+                <p onclick="abrirCerimonia()">Cerimônia</p>
+            </div>
+
+            <div class="overlay-c" id="overlay-c" onclick="fecharCerimonia()"></div>
+
+            <div class="cerimonia" id="cerimonia">
+
+                <p onclick="abrirCerimonia()">CERIMÔNIA</p>
+
+                <p>08 DE NOVEMBRO DE 2025 ÀS 17 HORAS</p>
+
+                <address>
+
+                    <a href="https://maps.app.goo.gl/YU12aMMKr1qVV1zJ8">R. Brasiliana, 337 - São Cristóvão, Medianeira
+                        -PR
+                    </a>
+
+                </address>
+
+                <button onclick="fecharCerimonia()">Fechar</button>
+
+            </div>
+
+            <!--recepção-->
+            <div class="imagem"><img onclick="abrirRecepcao()" src="icon/festa-icon.ico" alt="Local da Recepção">
+
+                <p onclick="abrirRecepcao()">Recepção</p>
+
+            </div>
+
+            <div class="overlay-d" id="overlay-d" onclick="fecharRecepcao()"></div>
+
+            <div class="recepcao" id="recepcao">
+                <p>RECEPÇÃO</p>
+
+                <p>08 | NOVEMBRO | 2025 ás 20:30 HORAS</p>
+
+                <address>
+                    <a href="https://maps.app.goo.gl/ZrjFYUr4vw4t6gzC7">R. Alagoas, 2430 - Centro, Medianeira - PR</a>
+                </address>
+
+                <button onclick="fecharRecepcao()">Fechar</button>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
